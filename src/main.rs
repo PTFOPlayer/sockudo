@@ -1364,7 +1364,7 @@ static GLOBAL: MiMalloc = MiMalloc;
 
 fn main() -> Result<()> {
     let runtime = tokio::runtime::Builder::new_multi_thread()
-    .enable_all()
+        .enable_all()
         .thread_stack_size(1 * 1024 * 1024) // 1MB stack size per thread
         .build()?;
 
